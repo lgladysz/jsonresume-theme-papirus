@@ -3,3 +3,8 @@ resume.json
 build/*
 *.DS_Store
 public/
+
+.idea
+*.iml
+out
+gen
