@@ -1,0 +1,50 @@
+{{#if resume.work.length}}
+    <section class="section-work">
+        {{>title title='Projects'}}
+        {{#each resume.projects}}
+            <div class="item">
+                {{#if displayName}}
+                    <div class="position">
+                        {{displayName}}
+                    </div>
+                {{/if}}
+                <div class="company">
+                    <span class="date">
+				{{#if startDate}}
+                    <span class="startDate">
+                        {{formatDate startDate}}
+                    </span>
+                {{/if}}
+                        {{#if endDate}}
+                            <span class="endDate">
+					- {{formatDate endDate}}
+				</span>
+                        {{else}}
+                            <span class="endDate">
+					- Present
+				</span>
+                        {{/if}}
+			</span>
+                </div>
+                {{#if summary}}
+                    <div class="summary">
+                        <p>{{summary}}</p>
+                    </div>
+                {{/if}}
+                <div class="highlights">
+                    Technologies:
+                    {{#if languages.length}}
+                        {{#each languages}}
+                            <span class="label label-default" style="line-height: 1.4rem">{{.}}</span>
+                        {{/each}}
+                    {{/if}}
+                    {{#if libraries.length}}
+                        {{#each libraries}}
+                            <span class="label label-default" style="line-height: 1.4rem">{{.}}</span>
+                        {{/each}}
+                    {{/if}}
+                </div>
+            </div>
+        {{/each}}
+    </section>
+{{/if}}

@@ -13,11 +13,6 @@
 			<span class="name">
 				{{organization}}
 			</span>
-			{{#if website}}
-			<span class="website">
-				| {{website}}
-			</span>
-		{{/if}}
 		{{/if}}
 		<span class="date">
 			{{#if startDate}}
@@ -33,13 +28,6 @@
 			<span class="endDate">
 				- Present
 			</span>
-			{{/if}}
-			{{#if startDate}}
-			{{#if endDate}}
-			<span class="diffDate">
-				({{dateDiff startDate endDate}})
-			</span>
-			{{/if}}
 			{{/if}}
 		</span>
 		</div>

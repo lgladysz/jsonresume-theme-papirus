@@ -2,10 +2,10 @@
   "name": "jsonresume-theme-papirus",
   "version": "0.0.5",
   "description": "Papirus theme for JSON Resume",
-  "author": "Konstantinos Alexiou",
+  "author": "Konstantinos Alexiou, Łukasz Gładysz",
   "repository": {
     "type": "git",
-    "url": "https://github.com/konalexiou/jsonresume-theme-papirus"
+    "url": "https://github.com/lgladysz/jsonresume-theme-papirus"
   },
   "keywords": [
     "jsonresume",
@@ -16,9 +16,15 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "handlebars": "^2.0.0-alpha.4",
+    "handlebars": ">=4.0.11",
     "html-pdf": "^2.2.0",
     "moment": "^2.19.1",
-    "pluralize": "^7.0.0"
+    "pluralize": "^7.0.0",
+    "require-dir": "^1.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4"
   }
 }
