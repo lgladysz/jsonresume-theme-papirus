@@ -15,7 +15,7 @@ function render (resume) {
       if (typeof date === 'undefined') {
         return 'now'
       }
-      return moment(date).format('MMM YYYY')
+      return moment(date).format('MM.YYYY')
     },
     formatDateYear: function (date) {
       if (typeof date === 'undefined') {

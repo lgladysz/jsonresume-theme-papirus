@@ -1,6 +1,6 @@
 {{#if resume.work.length}}
     <section class="section-work">
-        {{>title title='Projects'}}
+        {{>title title='Projekty'}}
         {{#each resume.projects}}
             <div class="item">
                 {{#if displayName}}
@@ -21,7 +21,7 @@
 				</span>
                         {{else}}
                             <span class="endDate">
-					- Present
+					- Obecnie
 				</span>
                         {{/if}}
 			</span>
@@ -32,7 +32,7 @@
                     </div>
                 {{/if}}
                 <div class="highlights">
-                    Technologies:
+                    Technologie:
                     {{#if languages.length}}
                         {{#each languages}}
                             <span class="label label-default" style="line-height: 1.4rem">{{.}}</span>
